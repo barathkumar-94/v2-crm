@@ -1,4 +1,4 @@
-export type CRM_MODULES = 'USERADMINISTRATOR' | 'SETUP' | 'CRM' | 'ENERGYACCOUNTING' | 'BILLING' | 'COMMON' | 'DASHBOARD' | 'REPORTS';
+export type CRM_MODULES = 'USERADMINISTRATOR' | 'SETUP' | 'CRM' | 'ENERGYACCOUNTING' | 'BILLING' | 'COMMON' | 'DASHBOARD' | 'REPORTS' | 'CLM';
 
 export interface ICRMRouteComponent {
   component: JSX.Element;

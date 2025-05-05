@@ -56,7 +56,8 @@ const moduleTitleMapper: Record<CRM_MODULES, string> = {
   BILLING: 'Billing',
   COMMON: 'Common',
   DASHBOARD: 'Dashboard',
-  REPORTS: 'Reports'
+  REPORTS: 'Reports',
+  CLM: 'CLM',
 };
 
 // const moduleDefaultRoute: Record<CRM_MODULES, string> = {

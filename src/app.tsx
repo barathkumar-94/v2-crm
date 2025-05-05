@@ -115,8 +115,8 @@ export const AuthRouteContainer: React.FC = () => {
     //let menuStyle = sidebarMenuStyle ?? ({} as IRetinaSidebarMenuStyle);
     return {
       isSimulation: true,
-      simulationDataFileName: appSource === 'energyAccounting' ? 'energyAccountingMenu.json' : appSource === 'crm' ? 'crmMenu.json':appSource==='clm'? 'clmMenu.json'  : 'crmMenu.json',
-      // simulationDataFileName: 'clmMenu.json',
+      // simulationDataFileName: appSource === 'energyAccounting' ? 'energyAccountingMenu.json' : appSource === 'crm' ? 'crmMenu.json':appSource==='clm'? 'clmMenu.json'  : 'crmMenu.json',
+      simulationDataFileName: 'clmMenu.json',
       onLoadEventParams: {
         moduleName: CRM_USER,
         serviceName: 'INIT_MENU',

@@ -43,12 +43,18 @@ import { AuditLog } from '../../master/AuditLog';
 import { CustomerDashboard } from '../../dashboard/customer';
 import { CorporateDashboard } from '../../dashboard/corporate';
 import { FourwayAnalysis } from '../../master/FourwayAnalysisScreen/FourwayAnalysis';
+import ManageProject from '../../R360xGPT/manageproject';
 
 export const routes: Dictionary<ICRMRouteComponent> = {
   ...route3,
   ...route1,
   ...routev,
   ...routem,
+  '/createProject': {
+    component: <ManageProject />,
+    title:'Template Builder Summary',
+    moduleName: 'CLM',
+  },  
   '/TemplateBuilderSummary': {
     component: <TemplateBuilderSummary />,
     title:'Template Builder Summary',

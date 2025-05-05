@@ -44,6 +44,13 @@
 					"route": "/PPAAmendment",
 					"parentKey": "CLM",
 					"sectionName": null
+				},
+				{
+					"key": "GPT",
+					"title": "GPT",
+					"route": "/createProject",
+					"parentKey": null,
+					"sectionName": null
 				}
 			]
 		}
