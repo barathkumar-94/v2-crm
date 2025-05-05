@@ -1,0 +1,51 @@
+{
+	"INIT_MENU": {
+		"data": {
+			"sidebarMenuList": [],
+			"navbarMenuList": [
+				{
+					"key": "CLM",
+					"title": "Contracts",
+					"route": null,
+					"parentKey": null,
+					"sectionName": null
+				},
+				{
+					"key": "LOI",
+					"title": "LOI/Termsheet",
+					"route": "/LOISummary",
+					"parentKey": "CLM",
+					"sectionName": null
+				},
+				{
+					"key": "PPA",
+					"title": "PPA",
+					"route": "/PPASummary",
+					"parentKey": "CLM",
+					"sectionName": null
+				},
+				{
+					"key": "AGREEMENT",
+					"title": "Agreement",
+					"route": "/AgreementSummary",
+					"parentKey": "CLM",
+					"sectionName": null
+				},
+				{
+					"key": "PAYMENTSECURITY",
+					"title": "Payment Security",
+					"route": "/paymentsecuritysummary",
+					"parentKey": "CLM",
+					"sectionName": null
+				},
+				{
+					"key": "PPAAMENDMENT",
+					"title": "PPA Amendment",
+					"route": "/PPAAmendment",
+					"parentKey": "CLM",
+					"sectionName": null
+				}
+			]
+		}
+	}
+}

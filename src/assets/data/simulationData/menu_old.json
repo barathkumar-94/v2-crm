@@ -1,0 +1,325 @@
+{
+	"INIT_MENU": {
+	  "data": {
+		"sidebarMenuList": [
+		  {	
+			"key": "RoleMaster",
+			"title": "Role Master",
+			"route":"/RoleMaster"
+		  },
+		  {	
+			"key": "RoleComponentMapping",
+			"title": "Role-Component Mapping",
+			"route":"/RoleComponentMapping"
+		  },
+		  {	
+			"key": "UserMaster",
+			"title": "User Master",
+			"route":"/UserMaster"
+		  },
+		  {	
+			"key": "UserRoleMapping",
+			"title": "User-Role Mapping",
+			"route":"/UserRoleMapping"
+		  },
+		  {	
+			"key": "UserMapping",
+			"title": "User - SBU & Site Mapping",
+			"route":"/ManageUserMapping"
+		  },
+		  {	
+			"key": "PasswordPolicy",
+			"title": "Password Policy",
+			"route":"/PasswordPolicy"
+		  },
+
+
+		  
+		  {	
+			"key": "EntityDetails",
+			"title": "Entity Setup"
+	     },
+		  {	
+			"key": "State",
+			"title": "State",
+			"route":"/StateSummary",
+			"parentKey":"EntityDetails"
+		  },
+		  {	
+			"key": "Company",
+			"title": "Company",
+			"route":"/ManageCompany",
+			"parentKey":"EntityDetails"
+		  },
+		  {	
+			"key": "Site",
+			"title": "Site",
+			"route":"/SiteSummary",
+			"parentKey":"EntityDetails"
+		  },
+		  {	
+			"key": "SBU",
+			"title": "SBU",
+			"route":"/SBUSummary",
+			"parentKey":"EntityDetails"
+		  },
+		  {	
+			"key": "SetupDetails",
+			"title": "Master Setup"
+		},
+		   {	
+			"key": "quickCodes",
+			"title": "Quick Codes",
+			"route":"/QuickCodes",
+			"parentKey":"SetupDetails"
+		  },
+		  {	
+			"key": "DocumentNumbering",
+			"title": "Document Numbering",
+			"route":"/DocumentNumbering",
+			"parentKey":"SetupDetails"
+		  },
+		  {	
+			"key": "UomMaster",
+			"title": "UOM",
+			"route":"/UomMaster",
+			"parentKey":"SetupDetails"
+		  },
+		  {	
+			"key": "Tcdmaster",
+			"title": "TCD",
+			"route":"/TcdMaster",
+			"parentKey":"SetupDetails"
+		  },
+		  {	
+			"key": "agency",
+			"title": "Agency",
+			"route":"/AgencyMaster",
+			"parentKey":"SetupDetails"
+		  },
+		  {	
+			"key": "TariffMaster",
+			"title": "Tariff",
+			"route":"/TarrifMaster",
+			"parentKey":"SetupDetails"
+		  },
+		  {	
+			"key": "assets",
+			"title": "Assets",
+			"route":"/AssetSummary",
+			"parentKey":"SetupDetails"
+		  },
+		  {	
+			"key": "tod",
+			"title": "TOD",
+			"route":"/TodMaster",
+			"parentKey":"SetupDetails"
+		  },
+		  {	
+			"key": "payterm",
+			"title": "Pay Term",
+			"route":"/PayTermSummary",
+			"parentKey":"SetupDetails"
+		  },
+		  {	
+			"key": "FinancialYearPeriod",
+			"title": "Financial Year - Period",
+			"route":"/FinancialYearPeriodSummary",
+			"parentKey":"SetupDetails"
+		  },
+		  {	
+			"key": "checklist",
+			"title": "Checklist",
+			"route":"/ChecklistSummary",
+			"parentKey":"SetupDetails"
+		  },
+		  {	
+			"key": "CostCenter",
+			"title": "Cost Center",
+			"route":"/CostCenter",
+			"parentKey":"SetupDetails"
+		  },
+		  {	
+			"key": "CustomerAccount",
+			"title": "Customer (Account)",
+			"route":"/CustomerAccountSummary",
+			"parentKey":"SetupDetails"
+		  },
+		  {	
+			"key": "Resource",
+			"title": "Resource",
+			"route":"/ResourceSummary",
+			"parentKey":"SetupDetails"
+		  },
+		  
+		  
+		  
+		  
+		  {	
+			"key": "BusinessPlan",
+			"title": "Business Plan",
+			"route":"/BusinessPlanSummary"
+		},
+		{	
+			"key": "Leads",
+			"title": "Leads",
+			"route":"/LeadSummary"
+		  },
+		  {	
+			"key": "OpportunitySummary",
+			"title": "Opportunities",
+			"route":"/OpportunitySummary"
+		  },
+	
+		  {	
+			"key": "LOI",
+			"title": "LOI",
+			"route":"/LOISummary"
+		  },
+		  {	
+			"key": "PPA",
+			"title": "PPA",
+			"route":"/PPASummary"
+		  },
+		  {	
+			"key": "Agreement",
+			"title": "Agreement",
+			"route":"/AgreementSummary"
+		  },
+		  {	
+			"key": "PaymentSecurity",
+			"title": "Payment Security",
+			"route":"/paymentsecuritysummary"
+		  },
+		  {	
+			"key": "PPAAmendment",
+			"title": "PPA Amendment",
+			"route":"/PPAAmendment"
+		  },
+		  
+		  {	
+			"key": "Contacts",
+			"title": "Contacts",
+			"route":"/ContactSummary"
+		  },
+		 {	
+			"key": "Generation_meter_entry",
+			"title": "Generation Meter Entry"
+	     },
+		 {	
+			"key": "daily_mater_entry",
+			"title": "Daily Meter entry",
+			"route":"/DailyMetersummary",
+			"parentKey":"Generation_meter_entry"
+		  },
+		  {	
+			"key": "tod_breakup",
+			"title": "TOD Breakup",
+			"route":"/TODBreakupSummary",
+			"parentKey":"Generation_meter_entry"
+		  },
+		  {	
+			"key": "monthly_meter_entry",
+			"title": "Monthly Meter entry",
+			"route":"/MonthlyMeterEntrySummary",
+			"parentKey":"Generation_meter_entry"
+		  },
+		  {	
+			"key": "daily_meter_reading_recon",
+			"title": "Daily Meter Reading Recon",
+			"route":"/DailyMeterReadingRecon",
+			"parentKey":"Generation_meter_entry"
+		  },
+		  {	
+			"key": "monthly_meter_reading_recon",
+			"title": "Monthly Meter Reading Recon",
+			"route":"/MonthlyMeterReadingRecon",
+			"parentKey":"Generation_meter_entry"
+		  },
+		  {	
+			"key": "consumer_meter_entry",
+			"title": "Consumer Meter Entry"
+	     },
+		 {	
+			"key": "Consumer_monthly_meter_entry",
+			"title": "Monthly Meter entry",
+			"route":"/ConsumerMonthlyMeterSummary",
+			"parentKey":"consumer_meter_entry"
+		  },
+
+
+		  
+		 
+		  {	
+			"key": "provisional_bill_Generation",
+			"title": "Bulk Bill Generation",
+			"route":"/ProvisionalBillSummary"
+		  },
+		  {	
+			"key": "direct_bill_generation",
+			"title": "Direct Bill Generation",
+			"route":"/BillSummary"
+		  },
+		  {	
+			"key": "final_bill_authorization",
+			"title": "Final Bill Authorization",
+			"route":"/FinalBillSummary"
+		  },
+		  {	
+			"key": "fout_way-analysis",
+			"title": "Four-Way Analysis",
+			"route":"/FourwayAnalysis"
+		  },
+
+		  {
+			"key": "chatter",
+			"title": "Chatter",
+			"route":"/Chatter"
+		  },
+		  {
+			"key": "documents",
+			"title": "Documents",
+			"route":"/DocumentList"
+		  },
+		  {
+			"key": "emailNotificationSetup",
+			"title": "Email Notification Setup",
+			"route":"/EmailNotificationSummary"
+		  }
+		  
+		],
+		"navbarMenuList":[
+			{
+				"key": "USERADMINISTRATOR",
+				"title": "User Administration",
+				"route":"/RoleMaster"
+			  },
+			  {
+				"key": "SETUP",
+				"title": "Setup",
+				"route":"/StateSummary"
+			  },
+			  {
+				"key": "CRM",
+				"title": "CRM",
+				"route":"/BusinessPlanSummary"
+			  },
+			  {
+				"key": "ENERGYACCOUNTING",
+				"title": "Energy Accounting",
+				"route":"/DailyMetersummary"
+			  },
+			  {
+				"key": "BILLING",
+				"title": "Billing",
+				"route":"/ProvisionalBillSummary"
+			  },
+			  {
+				"key": "COMMON",
+				"title": "Common",
+				"route":"/Chatter"
+			  }
+		]
+	  }
+	}
+  }

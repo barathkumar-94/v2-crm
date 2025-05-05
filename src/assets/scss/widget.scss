@@ -1,0 +1,75 @@
+.container-widget {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+    border-radius: .25rem;
+}
+
+.container-widget:not(.css-in-js) {
+    border-color: var(--rf-widget-border-color);
+}
+
+.container-widget>.widget-header:not(.css-in-js) {
+    border-bottom-color: var(--rf-widget-header-border-bottom-color);
+    padding-left: 15px;
+}
+
+.container-widget.section-header-bg-primary>.widget-header {
+    background-color: var(--rf-widget-header-bg);
+}
+
+/*applying the styles globally*/
+.container-widget>.widget-header .widget-title:not(.css-in-js) {
+    font-size: 14px;
+    font-weight: 500 !important;
+    color: #000000;
+
+    //for the lato font seems the icon and title are misaligned.to fix that added the below css
+    .widget-collapse-icon {
+        margin-top: 0px;
+        margin-right: .5rem;
+    }
+}
+
+.container-widget.section-title-fontsize-base>.widget-header .widget-title:not(.css-in-js) {
+    font-size: 16px;
+    font-weight: 600 !important;
+    font-family: var(--font-poppins);
+    color: #1a3562 !important;
+}
+
+@mixin section-header-border-left-fn($color) {
+    .widget-header::before {
+        content: "";
+        display: block;
+        border-right: 2px solid $color;
+        height: 80%;
+        position: absolute;
+        left: 15px;
+    }
+
+    .widget-header:not(.css-in-js) {
+        padding-left: 25px;
+    }
+}
+
+.section-header-border-l {
+    @include section-header-border-left-fn(var(--rf-gray-400));
+}
+
+.eq-height-section-col.container-widget {
+    height: 100% !important;
+}
+
+.container-widget .widget-header {
+    .ms-Button {
+        /*overwriting the forms lib style*/
+        height: 32px;
+        /*i{
+            color: #fff;
+        }*/
+    }
+}
+
+
+.root-51 {
+    background-color: var(--rf-primary-button-bg-color) !important;
+}

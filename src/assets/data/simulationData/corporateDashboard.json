@@ -1,0 +1,179 @@
+{
+    "INIT_CORPORATE_DASHBOARD":{
+        "data": {
+            "header": {
+                "totalOpportunities":12,
+                "totalOpportunitiesValue":182777251080,
+                "totalLOI":20,
+                "totalLOIValue":182777251080,
+                "totalPPA": 8,
+                "totalPPAValue": "17103371772",
+                "leadConversionRate":20,
+                "netRealizationWithSurplus":15,
+                "netRealizationWithoutSurplus":25,
+                "totalRevenue":182777251080
+            },
+            "actualGeneration":[
+                { "month": "January", "generation": 1000, "measure": "relative" },
+                { "month": "February", "generation": 500, "measure": "relative" },
+                { "month": "March", "generation": -200, "measure": "relative" },
+                { "month": "April", "generation": 300, "measure": "relative" },
+                { "month": "May", "generation": 400, "measure": "relative" },
+                { "month": "June", "generation": 600, "measure": "relative" },
+                { "month": "July", "generation": 700, "measure": "relative" },
+                { "month": "August", "generation": -100, "measure": "relative" },
+                { "month": "September", "generation": -400, "measure": "relative" },
+                { "month": "October", "generation": 200, "measure": "relative" },
+                { "month": "November", "generation": -300, "measure": "relative" },
+                { "month": "December", "generation": -200, "measure": "total" }
+              ],
+            "annualCommitment":[
+                { "month": "January", "commitment": 4500 },
+                { "month": "February", "commitment": 4300 },
+                { "month": "March", "commitment": 4700 },
+                { "month": "April", "commitment": 5000 },
+                { "month": "May", "commitment": 5200 },
+                { "month": "June", "commitment": 5500 },
+                { "month": "July", "commitment": 5700 },
+                { "month": "August", "commitment": 5600 },
+                { "month": "September", "commitment": 5300 },
+                { "month": "October", "commitment": 5100 },
+                { "month": "November", "commitment": 4800 },
+                { "month": "December", "commitment": 4600 }
+              ],
+              "salesForceByState":[
+                { "state": "Tamil Nadu", "salesForce": 80 },
+                { "state": "Gujarat", "salesForce": 120 },
+                { "state": "Maharashtra", "salesForce": 60 },
+                { "state": "Madhya Pradesh", "salesForce": 40 }
+              ],
+              "totalOperationCapacity":[
+                {
+                    "state":"SURAJBARI",
+                    "wind":34.5,
+                    "solar":null
+                },
+                {
+                    "state":"RATLAM - 1",
+                    "wind":170,
+                    "solar":null
+                },
+                {
+                    "state":"BOTHE",
+                    "wind":199.7,
+                    "solar":null
+                },
+                {
+                    "state":"PERIYAPATTI",
+                    "wind":148,
+                    "solar":78.8
+                },
+                {
+                    "state":"RAJKOT - 1",
+                    "wind":101.2,
+                    "solar":null
+                },
+                {
+                    "state":"RAJKOT - 2A",
+                    "wind":25.2,
+                    "solar":null
+                },
+                {
+                    "state":"RAJKOT - 2B",
+                    "wind":28,
+                    "solar":null
+                },
+                {
+                    "state":"DAYAPAR",
+                    "wind":126,
+                    "solar":null
+                },
+                {
+                    "state":"MORJAR - 1",
+                    "wind":148.5,
+                    "solar":null
+                },
+                {
+                    "state":"RAJKOT - 3",
+                    "wind":99.9,
+                    "solar":140
+                },
+                {
+                    "state":"DALAVAIPURAM",
+                    "wind":118.8,
+                    "solar":153.6
+                },
+                {
+                    "state":"BHAVNAGAR",
+                    "wind":118.8,
+                    "solar":182
+                }
+            ],
+            "totalOperationCapacitySold":[
+                {
+                    "state":"SURAJBARI",
+                    "wind":34.5,
+                    "solar":null
+                },
+                {
+                    "state":"RATLAM - 1",
+                    "wind":170,
+                    "solar":null
+                },
+                {
+                    "state":"BOTHE",
+                    "wind":199.7,
+                    "solar":null
+                },
+                {
+                    "state":"PERIYAPATTI",
+                    "wind":148,
+                    "solar":78.8
+                },
+                {
+                    "state":"RAJKOT - 1",
+                    "wind":101.2,
+                    "solar":null
+                },
+                {
+                    "state":"RAJKOT - 2A",
+                    "wind":25.2,
+                    "solar":null
+                },
+                {
+                    "state":"RAJKOT - 2B",
+                    "wind":28,
+                    "solar":null
+                },
+                {
+                    "state":"DAYAPAR",
+                    "wind":126,
+                    "solar":null
+                },
+                {
+                    "state":"MORJAR - 1",
+                    "wind":148.5,
+                    "solar":null
+                },
+                {
+                    "state":"RAJKOT - 3",
+                    "wind":99.9,
+                    "solar":140
+                },
+                {
+                    "state":"DALAVAIPURAM",
+                    "wind":118.8,
+                    "solar":153.6
+                },
+                {
+                    "state":"BHAVNAGAR",
+                    "wind":118.8,
+                    "solar":182
+                }
+            ]
+        },
+        "masters": {},
+        "messages": [],
+        "multiselect": {}
+    }
+}

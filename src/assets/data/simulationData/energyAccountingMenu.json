@@ -1,0 +1,177 @@
+{
+	"INIT_MENU": {
+		"data": {
+			"sidebarMenuList": [],
+			"navbarMenuList": [
+				{
+					"key": "salesDashboard",
+					"title": "Sales Dashboard",
+					"route": "/SalesDashboard",
+					"parentKey": "DASHBOARD",
+					"sectionName": null
+				},
+				{
+					"key": "ENERGYACCOUNTING",
+					"title": "Energy Accounting",
+					"route": null,
+					"parentKey": null,
+					"sectionName": null
+				},
+				{
+					"key": "DAILYMETERENTRY",
+					"title": "Daily Meter Entry",
+					"route": "/DailyMetersummary",
+					"parentKey": "ENERGYACCOUNTING",
+					"sectionName": "Generation Data"
+				},
+				{
+					"key": "MONTHLYMETERENTRY",
+					"title": "Monthly Meter Entry",
+					"route": "/MonthlyMeterEntrySummary",
+					"parentKey": "ENERGYACCOUNTING",
+					"sectionName": "Generation Data"
+				},
+				{
+					"key": "CONSUMERDEMANDPLANNING",
+					"title": "Consumer Demand Planning",
+					"route": "/ConsumerDemandPlanningSummary",
+					"parentKey": "ENERGYACCOUNTING",
+					"sectionName": "Consumer Data"
+				},
+				{
+					"key": "LDCDATA",
+					"title": "SLDC Data",
+					"route": "/SldcSummary",
+					"parentKey": "ENERGYACCOUNTING",
+					"sectionName": "Generation Data"
+				},
+				{
+					"key": "CONSUMERDISCOMDATA",
+					"title": "HT Bill Entry",
+					"route": "/ConsumerDiscomSummary",
+					"parentKey": "ENERGYACCOUNTING",
+					"sectionName": "Consumer Data"
+				},
+				{
+					"key": "CONSUMERCREDITDATA",
+					"title": "Consumer Credit Data",
+					"route": "/ConsumerCreditDataSummary",
+					"parentKey": "ENERGYACCOUNTING",
+					"sectionName": "Consumer Data"
+				},
+				{
+					"key": "GROUPCAPTIVEALLOTMENT",
+					"title": "Group Captive Allotment",
+					"route": "/GroupCaptiveAllotment",
+					"parentKey": "ENERGYACCOUNTING",
+					"sectionName": "Allocation and Banking"
+				},
+				{
+					"key": "JMRENTRY",
+					"title": "JMR Entry",
+					"route": "/JMREntrySummary",
+					"parentKey": "ENERGYACCOUNTING",
+					"sectionName": "Allocation and Banking"
+				},
+				{
+					"key": "BANKINGDETAILS",
+					"title": "Banking Details",
+					"route": "/BankingDetails",
+					"parentKey": "ENERGYACCOUNTING",
+					"sectionName": "Allocation and Banking"
+				},
+				{
+					"key": "BILLING",
+					"title": "Billing",
+					"route": null,
+					"parentKey": null,
+					"sectionName": null
+				},
+				{
+					"key": "PROVISIONALBILLGENERATION",
+					"title": "Batch Bill Generation",
+					"route": "/ProvisionalBillSummary",
+					"parentKey": "BILLING",
+					"sectionName": null
+				},
+				{
+					"key": "DIRECTBILLGENERATION",
+					"title": "Direct Bill Generation",
+					"route": "/BillSummary",
+					"parentKey": "BILLING",
+					"sectionName": null
+				},
+				{
+					"key": "FINALBILLAUTHORIZATION",
+					"title": "Final Bill Authorization",
+					"route": "/FinalBillSummary",
+					"parentKey": "BILLING",
+					"sectionName": null
+				},
+				{
+					"key": "DASHBOARD",
+					"title": "Dashboard",
+					"route": null,
+					"parentKey": null,
+					"sectionName": null
+				},
+				{
+					"key": "CORPORATEDASHBOARD",
+					"title": "Corporate Dashboard",
+					"route": "/CorporateDashboard",
+					"parentKey": "DASHBOARD",
+					"sectionName": null
+				},
+				{
+					"key": "SALESDASHBOARD",
+					"title": "Sales Dashboard",
+					"route": "/SalesDashboard",
+					"parentKey": "DASHBOARD",
+					"sectionName": null
+				},
+				{
+					"key": "REPORTS",
+					"title": "Reports",
+					"route": null,
+					"parentKey": null,
+					"sectionName": null
+				},
+				{
+					"key": "WTG_WISE_ALLOCATION",
+					"title": "WTG Wise Allocation",
+					"route": "/WTGWiseAllocation",
+					"parentKey": "REPORTS",
+					"sectionName": "Allocation"
+				},
+				{
+					"key": "BULK_BILL_REPORT",
+					"title": "Bulk Bill Report Generation",
+					"route": "/BulkBillReportGeneration",
+					"parentKey": "REPORTS",
+					"sectionName": "Billing"
+				},
+				{
+					"key": "PARK_TOTAL_INVOICE",
+					"title": "Park Total Invoice",
+					"route": "/PARK_TOTAL_INVOICE",
+					"parentKey": "REPORTS",
+					"sectionName": "Billing"
+				},
+				{
+					"key": "SALES_TALLY_REPORT",
+					"title": "Sales Tally Integration Report",
+					"route": "/SalesTallyReport",
+					"parentKey": "REPORTS",
+					"sectionName": "Common"
+				},
+				{
+					"key": "PARK_TOTAL_INVOICE_SLOT_WISE",
+					"title": "Park Total Invoice - Slot Wise",
+					"route": "/PARK_TOTAL_SLOT_WISE_INVOICE",
+					"parentKey": "REPORTS",
+					"sectionName": "Billing"
+				}
+			]
+		}
+	}
+}

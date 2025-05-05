@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/js",
+      "sourceMap": true,
+      "noImplicitAny": true,
+      "module":"commonjs",
+      "target": "es5",
+      "jsx": "react",
+      "lib": [
+        "es2015","dom"
+      ],
+      "esModuleInterop": true,
+      "experimentalDecorators": true,
+      "types": ["node", "numeral"],
+      "resolveJsonModule":true,//added to import mock json data
+      "skipLibCheck": true
+    },
+    "exclude": [
+      "./node_modules"
+    ],
+    "include": [
+      "./src/**/*"
+    ]
+  }

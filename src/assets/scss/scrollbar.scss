@@ -1,0 +1,59 @@
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-button {
+    width: 8px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--rf-gray-50);;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--rf-gray-100);
+    border: thin solid var(--rf-gray-100);
+    border-radius: 5px;
+}
+
+/* sidebar scroll - customize the scrollbar in firefox */
+/*commented for new theme...*/
+.sidebarnav {
+    /*for firefox*/
+    /*scrollbar-color: rgba(42, 60, 62, 0.5) rgba(42, 60, 62, 0.3);*/
+    scrollbar-color: var(--rf-gray-100) var(--rf-gray-50);
+    scrollbar-width: thin;
+}
+
+/*for chrome*/
+/*commented for new theme... in old theme used this css to add the blue color to scrollbar...*/
+/*.sidebarnav::-webkit-scrollbar-thumb {
+    background: var(--rf-scrollbar-thumb-color);
+}*/
+
+
+/*
+added for test
+.sidebarnav::-webkit-scrollbar-track {
+    background: #fff;
+}
+.sidebarnav::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-color: #fff;
+}
+
+.sidebarnav{
+    &:hover::-webkit-scrollbar-track {
+        background: $gray-50;
+    }
+}
+.sidebarnav {
+    &:hover::-webkit-scrollbar-thumb {
+        background: $gray-100;
+        border-color: $gray-100;
+    }
+}
+*/

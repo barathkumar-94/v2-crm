@@ -1,0 +1,45 @@
+{
+    "RCRM_INIT_AUDIT_LOG":{
+        "data":{
+            "logs":[
+                {
+                    "ACTION": "Insert",
+                    "table_name": "State Details",
+                    "changes": {
+                        "status": "ACTIVE",
+                        "state_code": "NEW_SSS",
+                        "state_name": "new_sss"
+                    },
+                    "AUDITED_BY": "demo@crm.com",
+                    "AUDITED_DATE": "2024-07-16T16:28:36.307544"
+                },
+                {
+                    "ACTION": "Insert",
+                    "table_name": "District Details",
+                    "changes": {
+                        "status": "YES",
+                        "state_code": "NEW_SSS",
+                        "district_code": "WEWE",
+                        "district_name": "ds"
+                    },
+                    "AUDITED_BY": "demo@crm.com",
+                    "AUDITED_DATE": "2024-07-16T16:28:36.307544"
+                }
+            ],
+            "headerDetails":[
+                {
+                    "label": "State Code",
+                    "value": "AFG"
+                },
+                {
+                    "label": "State Name",
+                    "value": "Afganisthan"
+                },
+                {
+                    "label": "Status",
+                    "value": "Active"
+                }
+            ]
+        }
+    }
+}

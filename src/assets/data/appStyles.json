@@ -1,0 +1,29 @@
+{
+  "isDark": false,
+  "palette": {
+    "background": "#f2f2f2",
+    "primary": "#2385EF",
+    "accent": "#1A47BA",
+    "highlight": "#2dc0e8",
+    "success": "#00B050",
+    "error": "#dc3545",
+    "warning": "#ffc000",
+    "info": "#5b73d5",
+    "border": "#ddd"
+  },
+  "fontFace": {
+    "fontPrimary": "Lato",
+    "fontSecondary": "PT Sans",
+    "baseFontSize": 14
+  },
+  "scaffold": {
+    "containerPadding": 10
+  },
+  "sidebarMenu":{
+    "fontColor":"#fff",
+    "iconColor":"#fff",
+    "backgroundColor":"#2E2559",
+    "activeFontColor":"#fff",
+    "activeBackgroundColor":"#564E79"
+  }
+}
