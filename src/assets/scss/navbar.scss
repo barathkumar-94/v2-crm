@@ -1,0 +1,63 @@
+.navbar {
+    background: var(--rf-navbar-bg-color);
+    color: var(--rf-navbar-text-color) !important;
+    height: var(--rf-navbar-height);
+    padding-right: 10px;
+    
+    .navbar-brand{
+        color: var(--rf-navbar-text-color) !important;
+        width: var(--rf-navbar-brand-logo-cotainer-width);
+        margin-left: 0px !important;
+
+        height: var(--rf-navbar-height);
+        display: flex;
+        align-items: center;
+        background: #fff;
+        margin-right: 10px !important;
+        padding: 0px 5px !important;
+    }
+
+    .navbar-brand-logo {
+        /*max-height: 39px;*/
+        /*max-height: 34px;*/
+        /*to align with the menu*/
+        /*updated for new theme*/
+        /*margin-left: 18px;*/
+        /*margin-left: 10px;*/
+        margin-right: 0px;
+        max-height: 100%;
+        max-width: 100%;
+
+    }
+
+    .link-profile{
+        .ms-Persona-details .ms-Persona-primaryText{
+            color: var(--rf-navbar-text-color) !important;
+        }
+        .ms-Persona-presence{
+            display: none;
+        }
+        .ms-Persona-secondaryText{
+            display: block;
+            color: var(--rf-persona-secondary-text-color);
+        }
+    }
+    
+    /*.link-profile .ms-Persona-details .ms-Persona-primaryText,
+    .ms-Icon {
+        color: var(--rf-primary-text-color) !important;
+    }*/
+
+    /*.ms-Button:hover {
+        background: transparent !important;
+    }*/
+
+    /*overwriting the border bottom to remove the white gap between the nav blue and sidebar blue*/
+    /*border-bottom: none;*/
+
+    /*box-shadow: var(--rf-navbar-box-shadow);*/
+}
+
+/*.navbar-brand-logo {
+    max-height: 32px !important;
+}*/

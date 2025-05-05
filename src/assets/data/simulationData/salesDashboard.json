@@ -1,0 +1,161 @@
+{
+    "INIT_SALES_DASHBOARD":{
+        "data":{
+            "header":{
+                "totalLeads":10,
+                "totalOpportunities":25,
+                "totalOpportunitiesValue":100643,
+                "totalLOI":8,
+                "totalLOIValue":10.64,
+                "totalPPA":10,
+                "totalPPAValue":100643
+            },
+            "leadSource":[
+                {
+                    "source":"Direct Enquiry",
+                    "value":15
+                },
+                {
+                    "source":"Cold Call",
+                    "value":15
+                },
+                {
+                    "source":"Channel Partner",
+                    "value":15
+                }
+            ],
+            "opportunityByIndustry":[
+                {
+                    "industry":"Automobile",
+                    "value":25
+                },
+                {
+                    "industry":"Chemical",
+                    "value":20
+                },
+                {
+                    "industry":"Logistics",
+                    "value":18
+                },
+                {
+                    "industry":"Textile",
+                    "value":15
+                }
+            ],
+            "installationCapacity":[
+                {
+                    "state":"SURAJBARI",
+                    "wind":34.5,
+                    "solar":null
+                },
+                {
+                    "state":"RATLAM - 1",
+                    "wind":170,
+                    "solar":null
+                },
+                {
+                    "state":"BOTHE",
+                    "wind":199.7,
+                    "solar":null
+                },
+                {
+                    "state":"PERIYAPATTI",
+                    "wind":148,
+                    "solar":78.8
+                },
+                {
+                    "state":"RAJKOT - 1",
+                    "wind":101.2,
+                    "solar":null
+                },
+                {
+                    "state":"RAJKOT - 2A",
+                    "wind":25.2,
+                    "solar":null
+                },
+                {
+                    "state":"RAJKOT - 2B",
+                    "wind":28,
+                    "solar":null
+                },
+                {
+                    "state":"DAYAPAR",
+                    "wind":126,
+                    "solar":null
+                },
+                {
+                    "state":"MORJAR - 1",
+                    "wind":148.5,
+                    "solar":null
+                },
+                {
+                    "state":"RAJKOT - 3",
+                    "wind":99.9,
+                    "solar":140
+                },
+                {
+                    "state":"DALAVAIPURAM",
+                    "wind":118.8,
+                    "solar":153.6
+                },
+                {
+                    "state":"BHAVNAGAR",
+                    "wind":118.8,
+                    "solar":182
+                }
+            ],
+            "salesStages":[
+                {
+                    "stage":"Qualification",
+                    "value":12
+                },
+                {
+                    "stage":"Negotiation",
+                    "value":10
+                },
+                {
+                    "stage":"Need Assessment",
+                    "value":9
+                },
+                {
+                    "stage":"LOI Submitted",
+                    "value":8
+                },
+                {
+                    "stage":"Closed Won",
+                    "value":7
+                },
+                {
+                    "stage":"Closed Lost",
+                    "value":5
+                }
+            ],
+            "schemeDetails":[
+                {
+                    "scheme":"DISCOM Sales",
+                    "count":30
+                },
+                {
+                    "scheme":"C&I Sales - Asset Sharing",
+                    "count":50
+                },
+                {
+                    "scheme":"C&I Sales - Third Party",
+                    "count":30
+                },
+                {
+                    "scheme":"C&I Sales - Group Captive",
+                    "count":40
+                },
+                {
+                    "scheme":"SECI Sales",
+                    "count":20
+                },
+                {
+                    "scheme":"Power Exchange Sales",
+                    "count":30
+                }
+            ]
+        }
+    }
+}

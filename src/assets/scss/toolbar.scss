@@ -1,0 +1,111 @@
+/*.screen-toolbar-title {
+    line-height: normal;
+}*/
+
+.screen-toolbar-title {
+    font-size: 12px;
+    font-family: var(--font-nunito) !important;
+    font-weight: 700;
+    color: #6750A4 !important;
+}
+
+.screen-toolbar-sub-title {
+    font-size: 10px;
+    font-weight: 500;
+    display: flex;
+
+    i {
+        font-size: 10px;
+    }
+
+    a {
+        color: var(--rf-breadcrumb-link-color);
+    }
+}
+
+.rf-screen-toolbar-filter-icon-button,
+.rf-screen-toolbar-filter-icon-button:hover {
+    background-color: var(--rf-primary-button-bg-color);
+    color: var(--rf-primary-button-text-color);
+}
+
+.rf-screen-toolbar-filter-icon-button.is-filter-visible {
+    background-color: var(--rf-primary-active-button-bg-color);
+}
+
+.rf-screen-rightside-filter-box-container .widget-header {
+    background: var(--rf-primary-table-bg);
+}
+
+
+
+
+.module-selector {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.module-title {
+    padding: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.module-dropdown {
+    position: absolute;
+    top: 1.5rem;
+    left: -13px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: .25rem;
+    list-style: none;
+    padding: 0;
+    z-index: 10;
+    min-width: 150px;
+}
+
+.module-dropdown li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.module-dropdown li:hover {
+    background: #eee;
+}
+
+.parent-route-selector {
+    cursor: pointer;
+
+    .parent-route-title {
+        padding: 0;
+        background: transparent;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.parent-route-dropdown {
+    position: absolute;
+    top: 3.5rem;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    list-style: none;
+    padding: 0;
+    z-index: 10;
+    min-width: 150px;
+    max-height: -webkit-fill-available;
+    overflow: auto;
+    cursor: pointer;
+
+    li {
+        padding: 5px 10px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #eee;
+        }
+    }
+}

@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-raleway: 'Raleway', sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+    --font-nunito: "Nunito Sans", sans-serif;
+    --font-inter: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--rf-body-bg-color);
+    font-family: var(--font-nunito) !important;
+    font-size: 1rem !important;
+}
+
+/*overwriting the bootstrap css*/
+button:focus {
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*to show the notification on top of the panel*/
+.notifications-tc {
+    z-index: 1000001 !important;
+}
+
+#mainContainer {
+    width: 100%;
+    height: 100%;
+}
+
+/*to show multiple section side by side*/
+.section-first {
+    padding-left: 0;
+}
+
+.section-second {
+    padding: 0;
+}
+
+/*end*/
+
+.eq-height-section-col.container-widget {
+    height: 100% !important;
+}
+
+/*tile style start*/
+@mixin first-tile-padding {
+    padding-left: 0 !important;
+    padding-right: .5rem !important;
+}
+
+@mixin second-tile-padding {
+    padding: 0 !important;
+}
+
+@mixin third-tile-padding {
+    padding-left: .5rem !important;
+    padding-right: 0 !important;
+}
+
+
+@mixin icon-metric-tile-style-fn($backgroundColor, $color) {
+    .rf-icon-metric-tile-container {
+        background-color: $backgroundColor;
+        /*border: 1px solid $color;*/
+        box-shadow: 0px 4px 7px 0px #0000001A;
+        /*&:hover {
+            box-shadow: 0px 4px 7px 0px #0000001A;
+        }*/
+    }
+
+    .rf-icon-metric-tile-icon-wrapper {
+        background-color: $color;
+
+        svg {
+            fill: #fff;
+        }
+    }
+
+    .rf-icon-metric-tile-label {
+        color: $color;
+    }
+
+    .rf-icon-metric-tile-checkmark {
+        background-color: $color;
+        color: #fff;
+    }
+}
+
+.total-count-icon-tile {
+    /*@include icon-metric-tile-style-fn(#e0d4f7,#7b5abf);*/
+    @include icon-metric-tile-style-fn(#E5EFFD, #0049BE);
+    /*@include first-tile-padding;*/
+}
+
+.active-count-icon-tile {
+    @include icon-metric-tile-style-fn(#EBF6EE, #2A8642);
+    /*@include second-tile-padding;*/
+}
+
+.inactive-count-icon-tile {
+    @include icon-metric-tile-style-fn(#FEF2CD, #FBBC05);
+    /*@include third-tile-padding;*/
+}
+
+.tile-wind-icon svg,
+.tile-solar-icon svg {
+    width: 25px !important;
+    height: 25px !important;
+}
+
+/*tile style end*/
+
+/*in a row, if anyone textbox label is large then that particular textbox aligned to bottom..all other textboxes are placed at top...
+to fix the alignment added below line to align all textboxes at bottom */
+/*.rf-section-row{
+    align-items: flex-end;
+}*/
+
+.page-with-footer-btn,
+.page-with-footer-btn-meta {
+    .rf-footer-btn {
+        position: absolute;
+        width: 100%;
+    }
+
+    .rf-scroll-container {
+        height: calc(100% - var(--rf-container-header-height) - 40px) !important;
+    }
+}
+
+.page-with-footer-meta,
+.page-with-footer-btn-meta {
+    .rf-footer-meta {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 0px !important;
+    }
+
+    .rf-scroll-container {
+        height: calc(100% - var(--rf-container-header-height) - 40px) !important;
+    }
+}
+
+.page-with-footer-btn.page-with-footer-meta,
+.page-with-footer-btn-meta {
+    .rf-footer-btn {
+        bottom: 40px;
+    }
+
+    .rf-scroll-container {
+        height: calc(100% - var(--rf-container-header-height) - 80px) !important;
+    }
+}
+
+/*stat card start*/
+@mixin stat-card-style-fn($color) {
+    .rf-icon-stat-card-container {
+        border-left: 1px solid $color;
+    }
+
+    .rf-icon-stat-card-value {
+        color: $color !important;
+    }
+
+    svg {
+        fill: $color;
+    }
+}
+
+.first-stat-card {
+    @include stat-card-style-fn(rgb(246, 128, 89)); //#2E2525 //rgb(246, 128, 89)
+    /*@include first-tile-padding;*/
+}
+
+.second-stat-card {
+    @include stat-card-style-fn(#8ED299);
+    /*@include second-tile-padding;*/
+}
+
+.third-stat-card {
+    @include stat-card-style-fn(#C69656); //#C69656 //rgb(255, 191, 58)
+    /*@include third-tile-padding;*/
+}
+
+.stat-card-total svg {
+    width: 36px;
+    height: 36px;
+}
+
+.rf-icon-stat-card-title {
+    color: rgb(95, 101, 113);
+}
+
+/*stat card end*/
+
+/*table dimension start*/
+.rf-table-dimension-container {
+    .row {
+        justify-content: center;
+    }
+
+    .rf-carousel-container {
+
+        .prev-next,
+        .prev-next:hover {
+            display: block;
+            border-radius: 50%;
+            background-color: var(--rf-carousel-prev-next-bg-color) !important;
+
+            .ms-Icon {
+                color: var(--rf-carousel-prev-next-text-color);
+                opacity: 1 !important;
+            }
+
+            .ms-Button:hover {
+                background-color: transparent !important;
+            }
+        }
+
+        :hover {
+            .prev-next {
+                animation: none !important;
+            }
+        }
+
+        .rf-carousel-indicator {
+            bottom: -15px;
+
+            i {
+                color: var(--rf-carousel-prev-next-bg-color);
+            }
+        }
+    }
+}
+
+.rf-table-dimension-radio-btn-container {
+    .ms-Label {
+        font-weight: normal;
+    }
+}
+
+/*table dimension end*/
+
+/*sales dashboard start*/
+@mixin sales-dashboard-tile-fn($index, $bg) {
+    .rf-control-col:nth-child(#{$index}) .rf-value-tile-container {
+        background-color: $bg;
+        color: #fff;
+    }
+}
+
+.sales-dashboard-tile-section {
+    .rf-section-row {
+        .col {
+            padding-left: 5px;
+            padding-right: 5px;
+            /*to force qual width for all columns*/
+            min-width: 0;
+
+            .rf-value-tile-value-container {
+                font-size: 24px;
+            }
+        }
+
+        @include sales-dashboard-tile-fn(1, #016179);
+        @include sales-dashboard-tile-fn(2, #2B2B2B);
+        @include sales-dashboard-tile-fn(3, #BA4B01);
+        @include sales-dashboard-tile-fn(4, #004BAF);
+        @include sales-dashboard-tile-fn(5, #550D6C);
+        @include sales-dashboard-tile-fn(6, #677821);
+        @include sales-dashboard-tile-fn(7, #58B19F);
+    }
+}
+
+.corporate-dashboard-second-tile-section {
+    .rf-section-row {
+        @include sales-dashboard-tile-fn(1, #677821);
+        @include sales-dashboard-tile-fn(2, #58B19F);
+        @include sales-dashboard-tile-fn(3, #4A4063);
+        @include sales-dashboard-tile-fn(4, #4F1271);
+        @include sales-dashboard-tile-fn(5, #783F8E);
+    }
+}
+
+/*sales dashboard end*/
+
+/*status page style start(not found/role not configured page etc...)*/
+.status-icon {
+    font-size: 30px;
+}
+
+.status-message {
+    font-size: 16px !important;
+}
+
+/*end*/
+
+/*overwriting the form builder component styles which are placed in navbar*/
+.navbar-rf {
+    margin-left: auto;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    .container-widget {
+        margin: 0 !important;
+    }
+
+    .form-builder-container .widget-body {
+        padding: 0 !important;
+    }
+
+    .rf-section-container {
+        padding: 0px;
+    }
+
+    .rf-section-row {
+        margin: 0px;
+    }
+
+    .rf-control-col {
+        margin: 0 !important;
+        padding: 0;
+        padding-right: 5px;
+    }
+}
+
+/*end*/
+
+.template-builder-file-upload .rf-file-uploader-container {
+    align-items: flex-end !important;
+}
+
+.template-builder-file-upload .file-editor-file-name-container,
+.user-profile-file-upload .file-editor-file-name-container {
+    /*to place the file name text at bottom of the upload,download icons*/
+    flex-basis: 100%;
+    padding-right: 0px;
+}
+
+.rf-status-timeline-text-circle {
+    &.current-status-Active::after {
+        background-color: #0f62fe !important;
+    }
+
+    &.current-status-InActive::after {
+        background-color: grey;
+    }
+
+    &.prev-status-Active::before {
+        background-color: #0f62fe !important;
+    }
+
+    &.prev-status-InActive::before {
+        background-color: grey;
+    }
+
+    &.current-status-Active i {
+        color: #0f62fe !important;
+    }
+
+    &.current-status-InActive i {
+        color: grey;
+        font-size: 11px;
+    }
+
+    .rf-status-timeline-text {
+        font-weight: bold;
+    }
+}
+
+/*to avoid the ellipsis text and show the full text on small screens*/
+@media screen and (max-width: 1300px) {
+    .customer-dashboard-total-gen-tile {
+        .rf-value-tile-label {
+            font-size: 13px;
+        }
+    }
+
+    .customer-dashboard-total-consumption-tile {
+        .rf-value-tile-label {
+            font-size: 12px;
+        }
+    }
+}
+
+/*copy header value to table style start*/
+.header-to-table-copy-title .rf-label {
+    text-decoration: underline;
+}
+
+.copy-producer-table-to-consumer-lbl {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    color: var(--rf-breadcrumb-link-color);
+
+    .ms-Button {
+        background: var(--rf-primary-button-bg-color);
+        color: var(--rf-primary-button-text-color);
+        border-color: var(--rf-primary-button-bg-color);
+    }
+}
+
+.header-to-table-copy-cntrl {
+    /*padding-right: 0px;*/
+    /*col-2 width is 16.666667%*/
+    max-width: calc(16.666667% - 18px);
+
+    .ms-ComboBox::after,
+    .ms-TextField-fieldGroup {
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+}
+
+.header-to-table-copy-icon {
+    display: flex;
+    padding: 0px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: -15px;
+
+    .ms-Button {
+        background: var(--rf-primary-button-bg-color);
+        color: var(--rf-primary-button-text-color);
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+}
+
+/*end*/
+
+.rf-file-preview-modal-for-docx .modalBody {
+    padding: 0px !important;
+
+    .docx-wrapper {
+        background: #e0e0e0;
+    }
+}
+
+.user-manual-download-icon-cell i {
+    font-size: 18px;
+}
+
+
+.ms-ComboBox-container .ms-Label,
+.ms-TextField .ms-Label,
+.rf-html-editor-container .ms-Label,
+.rf-html-viewer-container .ms-Label,
+.rf-multistate-checkbox-container .ms-Label,
+.rf-file-uploader-container .ms-Label,
+.ms-ChoiceFieldGroup .ms-Label {
+    font-family: var(--font-nunito);
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 12px;
+    color: #6c6868;
+}
+
+.ms-Button {
+    &--primary {
+        background: var(--rf-primary-button-bg-color);
+        color: var(--rf-primary-button-text-color);
+        border-color: var(--rf-primary-button-bg-color);
+    }
+}
+
+.ms-Fabric button,
+.ms-Fabric input,
+.ms-Fabric textarea {
+    font-family: var(--font-nunito) !important;
+}
+
+
+
+// New Style 
+
+
+.ms-ComboBox {
+    &-Input {
+        font-size: 11px !important;
+        font-weight: 500;
+    }
+
+    &-option {
+        min-height: 29px !important;
+    }
+
+    &-optionText {
+        font-size: 11px !important;
+        font-weight: 500;
+    }
+}
+
+
+.ms-ChoiceField-field {
+    font-size: .85rem !important;
+}
+
+input {
+    &::placeholder {
+        font-size: 12px !important;
+    }
+}
+
+
+
+.p-dropdown-panel {
+    .p-dropdown-items {
+        padding: 0 !important;
+    }
+}
+
+.p-dropdown-items {
+    .p-dropdown-item {
+        padding: 0.25rem 0.375rem !important;
+        font-size: 12px !important;
+    }
+}
+
+
+// Removing the boxshadow on focusing the Inputs
+.p-component {
+    box-shadow: 0 !important;
+}
+
+
+
+.filter_section {
+    box-shadow: none !important;
+}
+
+// Tile Style
+
+.rf-status-tile-container {
+    border-radius: .25rem !important;
+    background-color: #E7EDFF !important;
+    box-shadow: none !important;
+    flex-direction: column-reverse !important;
+
+    .rf-status-tile-label {
+        color: #1a3562 !important;
+        font-weight: 500 !important;
+    }
+
+    .rf-status-tile-value {
+        color: #396AFF !important;
+        font-size: 24px !important;
+        font-weight: 700 !important;
+    }
+}
+
+
+.dashboard_screen {
+    .container-widget.summary_section {
+        margin-top: -5px !important;
+    }
+}
+
+.summary_section {
+    box-shadow: none !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+.has_toolbar {
+    margin-top: -25px !important;
+
+    .rf-table-toolbar-container {
+        transform: translateY(-10px) !important;
+    }
+}
+
+
+
+.rf-label{
+    font-size: 1rem !important;
+}

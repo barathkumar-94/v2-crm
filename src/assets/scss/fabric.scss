@@ -1,0 +1,58 @@
+.ms-ComboBox:not(.is-open)::after {
+    border-color: var(--rf-textbox-border-color);
+    border-width: 1px;
+    /*fix - while focusing the dropdown 2px gray border visible*/
+}
+
+.ms-TextField-fieldGroup,
+.ms-BasePicker .ms-BasePicker-text {
+    border-color: var(--rf-textbox-border-color);
+}
+
+.ms-ComboBox-container .ms-Label,
+.ms-TextField .ms-Label,
+.rf-html-editor-container .ms-Label,
+.rf-html-viewer-container .ms-Label,
+.rf-multistate-checkbox-container .ms-Label,
+.rf-file-uploader-container .ms-Label,
+.ms-ChoiceFieldGroup .ms-Label {
+    font-weight: 500;
+}
+
+// .ms-Button-label{
+//     /*reducing the button font weight*/
+//     font-weight: 500;
+// }
+
+
+.ms-Button-label {
+    margin: 5px 4px !important;
+    font-weight: 600 !important;
+    font-family: var(--font-raleway) !important;
+    font-size: 13px;
+}
+
+.ms-Label {
+    margin: 0;
+    font-weight: 600 !important;
+    font-family: var(--font-raleway) !important;
+    font-size: 8px;
+}
+
+.ms-TextField-fieldGroup,
+.ms-BasePicker .ms-BasePicker-text {
+    border-radius: 4px;
+
+    input {
+        border-radius: 4px !important;
+        color: #383838E5;
+        font-size: 10px !important;
+        font-weight: 400 !important;
+        line-height: 12px;
+    }
+}
+
+
+.p-inputtext {
+    font-size: 12px !important;
+}

@@ -1,0 +1,85 @@
+:root {
+    /*--rf-font-family: "Lato";
+    --rf-body-bg-color: rgb(243, 243, 243);
+    --rf-primary-bg-color: #2E2559;
+    --rf-primary-text-color: #ffffff;
+    --rf-navbar-bg-color:#fff;
+    --rf-navbar-text-color:#000;
+    --rf-primary-button-bg-color:#5722A5;
+    --rf-primary-active-button-bg-color:#144b86;
+    --rf-primary-button-text-color:#ffffff;
+    --rf-breadcrumb-link-color:#175BCC;
+    --rf-widget-border-color: transparent;
+    --rf-widget-header-border-bottom-color:transparent;
+    --rf-primary-table-bg: #D4D5E4;
+    --rf-primary-table-text: #000;
+    --rf-primary-table-icon-color:#605e5c;
+    --rf-widget-header-bg:#D4D5E4;*/
+
+    --rf-font-family: var(--font-nunito);
+    --rf-body-bg-color: #F9FAFB;
+    --rf-primary-bg-color: #175BCC;
+    --rf-primary-text-color: #ffffff;
+    --rf-navbar-bg-color: #175bcc;
+    --rf-navbar-text-color: #ffffff;
+    --rf-primary-button-bg-color: #175BCC;
+    --rf-primary-active-button-bg-color: #175BCC;
+    --rf-primary-button-text-color: #ffffff;
+    --rf-breadcrumb-link-color: #175BCC; //#000;
+    --rf-widget-border-color: #ddd;
+    --rf-widget-header-border-bottom-color: transparent;
+    --rf-primary-table-bg: #E8EFFA;
+    --rf-primary-table-text: #474747; // #000;
+    --rf-primary-table-icon-color: #605e5c;
+    --rf-widget-header-bg: #E8EFFA;  //I've just changed the color to #F4F4F4 from rgb(242, 246, 250)
+
+    --rf-carousel-prev-next-bg-color: #175BCC;
+    --rf-carousel-prev-next-text-color: #fff;
+    --rf-toolbar-dropdown-bg: transparent linear-gradient(180deg, #FCFDFF 0%, #EAEEF5 100%);
+    --rf-toolbar-dropdown-border-color: #C0C6CC;
+    --rf-persona-secondary-text-color: rgba(255, 255, 255, 0.7);
+
+    --rf-textbox-border-color: #c6c6c6; //rgb(96, 94, 92);
+    --rf-toolbar-bg-color: #ffffff;
+    --rf-toolbar-font-color: #000000;
+    --rf-toolbar-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.05);
+
+    --rf-sidebar-box-shadow: 2px 0px 8px 0px rgba(0, 0, 0, 0.10);
+    --rf-sidebar-separator-color: #564E79;
+    --rf-scrollbar-thumb-color: rgb(0, 0, 136, 0.7);
+
+    --rf-secondary-800: #4C2DB7;
+    --rf-secondary-700: #8057E8;
+    --rf-pink-700: #FF25A8;
+    --rf-primary-100: #BDE0FE;
+    --rf-primary-900: #1A47BA;
+    --rf-primary-800: #1868D9;
+    --rf-primary-700: #167AEA;
+    --rf-primary-55: #F0F8FF;
+    --rf-primary-50: #E3F3FF;
+    --rf-primary-65: #D3E4F3;
+    --rf-gray-25: #F3F5F7;
+    --rf-gray-50: #E7E8EA;
+    --rf-gray-100: #B5B8BF;
+    --rf-gray-200: #6A6A6A;
+    --rf-gray-300: #5F6571;
+    --rf-gray-400: #404958;
+    --rf-gray-500: #101B2D;
+    --rf-gray-800: #080F19;
+    --rf-status-success: #4DBD3A;
+    --rf-status-warning: #FF9211;
+    --rf-status-error: #FF1B44;
+
+    /*--rf-navbar-box-shadow: 0px 4px 12px 0px #29252212;*/
+
+    --rf-secondary-menu-background: rgb(243, 245, 247);
+    --rf-secondary-menu-searchbox-background: rgb(235 235 235);
+
+    --rf-navbar-height: 5.571rem;
+    --rf-container-header-height: 3.721rem;
+    --rf-footer-height: 25px;
+    --rf-navbar-brand-logo-cotainer-width: 160px;
+}
+
+//menu, nav variables
+$secondary-menu-width: 200px;

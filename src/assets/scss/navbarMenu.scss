@@ -1,0 +1,67 @@
+.navbar-commandbar {
+    .ms-CommandBar {
+        padding-left: 0px;
+        height: 100%;
+        background-color: var(--rf-navbar-bg-color);
+        color: var(--rf-navbar-text-color);
+
+        .ms-CommandBarItem-link {
+            padding: 0px .5px;
+            border-bottom: 2px solid transparent;
+            background-color: var(--rf-navbar-bg-color);
+            color: var(--rf-navbar-text-color);
+            font-size: 12px;
+            font-weight: 700;
+            margin: 0 2px;
+
+            .ms-Button-menuIcon,
+            &:hover .ms-Button-menuIcon {
+                color: var(--rf-navbar-text-color);
+                background-color: transparent;
+                font-size: 12px;
+            }
+        }
+
+        .ms-CommandBarItem-link.selected {
+            /*color: var(--rf-primary-bg-color);
+            background-color: var(--rf-primary-text-color);*/
+            border-bottom-color: var(--rf-navbar-text-color);
+        }
+    }
+}
+
+
+.ms-ContextualMenu-link {
+    font-size: 12px;
+    height: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    background-color: #FAFAFA;
+
+    &:hover{
+        background-color: #175BCC1A;
+    }
+
+    &:not(:last-child) {
+        border-bottom: 1px solid #cccccc50 !important;
+    }
+}
+
+
+li.ms-ContextualMenu-item{
+    &:not(:last-child) {
+        border-bottom: 1px solid #cccccc50 !important;
+    }
+}
+// .root-96 {
+//     font-size: 12px;
+//     height: 2rem;
+//     font-weight: 700;
+//     line-height: 2rem;
+// }
+
+// .item-94 {
+//     &:not(:last-child) {
+//         border-bottom: 1px solid #cccccc50 !important;
+//     }
+// }

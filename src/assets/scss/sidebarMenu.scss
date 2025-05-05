@@ -1,0 +1,116 @@
+.sidebar {
+  box-shadow: var(--rf-sidebar-box-shadow);
+}
+
+.sidebar,
+.sidebarnav {
+  overflow-y: auto;
+}
+
+.sidebarnav {
+  width: $secondary-menu-width;
+
+  .sidebarnav-section-header-count {
+    background: var(--rf-gray-50);
+    padding: 0px 3px;
+    color: var(--rf-pink-700);
+    border-radius: 2px;
+  }
+
+  .sidebarnav-link-count {
+    background: var(--rf-primary-100);
+    border-radius: 2px;
+  }
+}
+
+.sidebar-collapsible-menu>.configurator-page-container {
+  width: calc(100% - $secondary-menu-width) !important;
+  left: $secondary-menu-width !important;
+}
+
+.sidebarnav {
+
+  /*to avoid overlapping the menu icon with the chevron dropdown icon
+  and moving the chevron icon at right..
+  */
+  .ms-Nav-chevronButton {
+    right: 1px;
+    left: auto;
+  }
+
+  .ms-Button {
+    padding-left: 10px;
+  }
+
+  /*nested sub menu styles*/
+  .ms-Nav-navItems .ms-Nav-navItems .ms-Button {
+
+    /*reducing the nested sub menu padding*/
+    &.ms-Button--action {
+       padding-left: 20px;
+    }
+
+    /*split button style*/
+    border: none;
+    background-color: transparent;
+
+
+    //css for the action button - without split button
+    //to align all the sub menu icons(to avoid zigzag) moving all the submenu dropdown icons at right
+    .ms-Button-menuIcon:not(.ms-Button-icon) {
+      position: absolute;
+      right: 0px;
+    }
+
+    //after adding the above css and while click the menu icon the chevron icon position changing... to fix that issue added the below css..
+    &:active>* {
+      position: static;
+    }
+  }
+
+  .ms-Nav-navItems .ms-Nav-navItems .ms-Nav-navItems .ms-Button{
+      &.ms-Button--action{
+          padding-left: 25px;
+       }
+  }
+
+  /*.sidebar-nav-child-links-section {
+    padding: 10px 20px;
+    font-size: 12px;
+    background: #eee;
+    color: #000;
+    display: none;
+  }
+
+  .ms-Nav-compositeLink.is-expanded>.sidebar-nav-child-links-section {
+    display: block;
+  }*/
+
+  /*selected link checkbox color*/
+  .is-selected .ms-Checkbox-checkbox {
+    background: #fff;
+
+    .ms-Checkbox-checkmark {
+      color: var(--rf-primary-bg-color);
+    }
+  }
+  .ms-Nav-linkText.linkText-49{
+    font-weight: bold;
+  }
+ 
+  /*removing the bold for the selected menu link*/
+  .ms-Nav-compositeLink.is-selected{
+    .ms-Nav-link{
+      font-weight: 400;
+    }
+    /*removing the selected item leftside border*/
+    .ms-Nav-link::after{
+      border-left: none;
+    }
+  }
+
+  /*border bottom for the nested/sub level menu items*/
+  li.ms-Nav-navItem ul.ms-Nav-navItems{
+    border-bottom: 1px solid var(--rf-sidebar-separator-color);
+  }
+}

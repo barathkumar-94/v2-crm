@@ -1,0 +1,50 @@
+{
+    "INIT_CUSTOMER_DASHBOARD":{
+        "data": {
+            "header": {
+                "totalGenerationUnits": 13,
+                "totalConsumptionUnits": 12,
+                "paymentSecurityValue": "459520",
+                "totalBillValue": "182777251080",
+                "lastBillValue": "182777251080",
+                "totalPPA": 8,
+                "totalPPAValue": "17103371772"
+            },
+            "monthlyDemand":[
+                { "month": "January", "demand": 4000 },
+                { "month": "February", "demand": 3800 },
+                { "month": "March", "demand": 4200 },
+                { "month": "April", "demand": 4500 },
+                { "month": "May", "demand": 4800 },
+                { "month": "June", "demand": 5000 },
+                { "month": "July", "demand": 5200 },
+                { "month": "August", "demand": 5100 },
+                { "month": "September", "demand": 4700 },
+                { "month": "October", "demand": 4400 },
+                { "month": "November", "demand": 4100 },
+                { "month": "December", "demand": 3900 }
+              ],      
+              "consumptionTrend":[
+                { "month": "January", "consumption": 3500 },
+                { "month": "February", "consumption": 3300 },
+                { "month": "March", "consumption": 3700 },
+                { "month": "April", "consumption": 4000 },
+                { "month": "May", "consumption": 4200 },
+                { "month": "June", "consumption": 4500 },
+                { "month": "July", "consumption": 4700 },
+                { "month": "August", "consumption": 4600 },
+                { "month": "September", "consumption": 4300 },
+                { "month": "October", "consumption": 4100 },
+                { "month": "November", "consumption": 3800 },
+                { "month": "December", "consumption": 3600 }
+              ],
+              "consumptionBySource":[
+                { "source": "Solar", "consumption": 500 },
+                { "source": "Wind", "consumption": 700 }
+              ]
+        },
+        "masters": {},
+        "messages": [],
+        "multiselect": {}
+    }
+}

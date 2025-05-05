@@ -1,0 +1,193 @@
+.table-absolute-toolbar .rf-table-toolbar-container {
+    position: absolute;
+    right: 15px;
+    top: -40px;
+}
+
+.table-absolute-toolbar-v1 .rf-table-toolbar-container {
+    position: absolute;
+    right: 0px;
+    top: -45px;
+}
+
+.container-widget:not(.section-header-bg-primary):not(.no-table-theme) {
+
+    /*container-widget:not => not applying the table header background theme if the widget header has background theme*/
+    .p-datatable .p-datatable-thead>tr>th,
+    .p-datatable .p-sortable-column:not(.p-highlight):not(.p-sortable-disabled):hover,
+    .p-datatable .p-sortable-column.p-highlight:not(.p-sortable-disabled):hover,
+    .p-datatable .p-sortable-column.p-highlight {
+        // background: var(--rf-primary-table-bg);
+        // color: var(--rf-primary-table-text);
+        background: var(--rf-primary-table-bg);
+        color: var(--rf-primary-table-text);
+        font-family: var(--font-poppins);
+        font-weight: 600;
+        font-size: 11px;
+        padding: 0.286rem 0.5rem;
+        border-right: 0;
+        border-left: 0;
+        border-color: #D1DEF5 !important;
+
+        &:first-child {
+            border-left: 1px solid #D1DEF5;
+        }
+
+        &:last-child {
+            border-right: 1px solid #D1DEF5;
+        }
+
+        .pi {
+            font-size: 9px;
+        }
+    }
+
+    .p-datatable {
+        th {
+            &:nth-child(1) {
+                border-radius: 4px 0 0 0;
+            }
+
+            &:last-child {
+                border-radius: 0 4px 0 0;
+            }
+        }
+    }
+
+    .p-datatable .p-sortable-column:focus {
+        box-shadow: none;
+    }
+}
+
+.p-datatable .p-datatable-thead>tr>th,
+.p-datatable .p-sortable-column:not(.p-highlight):not(.p-sortable-disabled):hover,
+.p-datatable .p-sortable-column.p-highlight:not(.p-sortable-disabled):hover,
+.p-datatable .p-sortable-column.p-highlight {
+    // background: var(--rf-primary-table-bg);
+    // color: var(--rf-primary-table-text);
+    background: var(--rf-primary-table-bg);
+    color: var(--rf-primary-table-text);
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    font-size: 11px;
+    padding: 0.286rem 0.5rem;
+    border-right: 0;
+    border-left: 0;
+    border-color: #D1DEF5 !important;
+
+    &:first-child {
+        border-left: 1px solid #D1DEF5;
+    }
+
+    &:last-child {
+        border-right: 1px solid #D1DEF5;
+    }
+
+    .pi {
+        font-size: 9px;
+    }
+}
+
+.p-datatable {
+    th {
+        &:nth-child(1) {
+            border-radius: 4px 0 0 0;
+        }
+
+        &:last-child {
+            border-radius: 0 4px 0 0;
+        }
+    }
+}
+
+.p-datatable .p-sortable-column:focus {
+    box-shadow: none;
+}
+
+.p-datatable .p-sortable-column .p-sortable-column-icon,
+.p-datatable .p-sortable-column .p-sortable-column-icon:hover,
+.p-column-filter-menu-button,
+.p-column-filter-menu-button:hover {
+    color: var(--rf-primary-table-icon-color) !important;
+}
+
+// .p-datatable .p-datatable-thead > tr > th{
+//     font-weight: 500;
+// }
+
+/*.rf-table-excel-export-btn, .rf-table-csv-export-btn{
+    background-image: url(../images/icons/excel.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+    cursor: pointer;
+    .ms-Button-flexContainer{
+       display: none; //hide the btn icon
+    }
+    &:hover{
+        background-color: transparent;
+    }
+}*/
+
+.p-datatable.p-datatable-sm .p-datatable-thead>tr>th {
+    padding: 0.286rem 0.5rem !important;
+}
+
+.p-datatable.p-datatable-sm .p-datatable-tbody>tr>td {
+    padding: 0.286rem 0.5rem;
+    color: #636363;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: var(--font-nunito);
+    border-left: 0;
+    border-right: 0;
+
+    &:first-child {
+        border-left: 1px solid #D1DEF5;
+    }
+
+    &:last-child {
+        border-right: 1px solid #D1DEF5;
+    }
+
+    a {
+        color: #175ac9;
+        text-decoration: none;
+        background-color: transparent;
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
+
+.p-datatable.p-datatable-sm .p-datatable-tbody>tr:nth-child(even)>td {
+    background-color: #E8EFFA;
+}
+
+.editTable {
+    .p-datatable-tbody>tr:nth-child(even)>td {
+        background-color: transparent !important;
+    }
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page {
+    min-width: 2rem;
+    height: 2rem;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: var(--font-nunito);
+}
+
+.p-paginator .p-paginator-current {
+    min-width: 2rem;
+    height: 2rem;
+    font-size: 12px;
+    font-family: var(--font-nunito);
+    font-weight: 500;
+}
+
+.p-column-filter-menu-button {
+    $size: 1.5rem;
+    width: $size;
+    height: $size;
+}

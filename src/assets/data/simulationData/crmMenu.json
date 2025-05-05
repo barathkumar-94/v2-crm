@@ -1,0 +1,261 @@
+{
+	"INIT_MENU": {
+		"data": {
+			"sidebarMenuList": [],
+			"navbarMenuList": [
+				{
+					"key": "SALESDASHBOARD",
+					"title": "Sales Dashboard",
+					"route": "/SalesDashboard",
+					"parentKey": "DASHBOARD",
+					"sectionName": null
+				},
+				{
+					"key": "SETUP",
+					"title": "Setup",
+					"route": null,
+					"parentKey": null,
+					"sectionName": null
+				},
+				{
+					"key": "STATE",
+					"title": "State",
+					"route": "/StateSummary",
+					"parentKey": "SETUP",
+					"sectionName": "Entity Setup"
+				},
+				{
+					"key": "COMPANY",
+					"title": "Company",
+					"route": "/ManageCompany",
+					"parentKey": "SETUP",
+					"sectionName": "Entity Setup"
+				},
+				{
+					"key": "SITE",
+					"title": "Site",
+					"route": "/SiteSummary",
+					"parentKey": "SETUP",
+					"sectionName": "Entity Setup"
+				},
+				{
+					"key": "SBU",
+					"title": "SBU",
+					"route": "/SBUSummary",
+					"parentKey": "SETUP",
+					"sectionName": "Entity Setup"
+				},
+				{
+					"key": "QUICKCODES",
+					"title": "Quick Codes",
+					"route": "/QuickCodes",
+					"parentKey": "SETUP",
+					"sectionName": "Master Setup"
+				},
+				{
+					"key": "DOCUMENTNUMBERING",
+					"title": "Document Numbering",
+					"route": "/DocumentNumbering",
+					"parentKey": "SETUP",
+					"sectionName": "Master Setup"
+				},
+				{
+					"key": "UOM",
+					"title": "UOM",
+					"route": "/UomMaster",
+					"parentKey": "SETUP",
+					"sectionName": "Master Setup"
+				},
+				{
+					"key": "TCD",
+					"title": "TCD",
+					"route": "/TcdMaster",
+					"parentKey": "SETUP",
+					"sectionName": "Master Setup"
+				},
+				{
+					"key": "AGENCY",
+					"title": "Agency",
+					"route": "/AgencyMaster",
+					"parentKey": "SETUP",
+					"sectionName": "Master Setup"
+				},
+				{
+					"key": "CHANNELPARTNERS",
+					"title": "Channel Partners",
+					"route": "/ChannelPartnerMaster",
+					"parentKey": "SETUP",
+					"sectionName": "Master Setup"
+				},
+				{
+					"key": "TARIFF",
+					"title": "Tariff",
+					"route": "/TarrifMaster",
+					"parentKey": "SETUP",
+					"sectionName": "Master Setup"
+				},
+				{
+					"key": "ASSETS",
+					"title": "Assets",
+					"route": "/AssetSummary",
+					"parentKey": "SETUP",
+					"sectionName": "Master Setup"
+				},
+				{
+					"key": "TOD",
+					"title": "TOD",
+					"route": "/TodMaster",
+					"parentKey": "SETUP",
+					"sectionName": "Master Setup"
+				},
+				{
+					"key": "PAYTERM",
+					"title": "Pay Term",
+					"route": "/PayTermSummary",
+					"parentKey": "SETUP",
+					"sectionName": "Master Setup"
+				},
+				{
+					"key": "FINANCIALYEARPERIOD",
+					"title": "Financial Year/Period",
+					"route": "/FinancialYearPeriodSummary",
+					"parentKey": "SETUP",
+					"sectionName": "Master Setup"
+				},
+				{
+					"key": "CUSTOMERACCOUNT",
+					"title": "Customer Account",
+					"route": "/CustomerAccountSummary",
+					"parentKey": "SETUP",
+					"sectionName": "Master Setup"
+				},
+				{
+					"key": "RESOURCE",
+					"title": "Resource",
+					"route": "/ResourceSummary",
+					"parentKey": "SETUP",
+					"sectionName": "Master Setup"
+				},
+				{
+					"key": "TEMPLATEBUILDER",
+					"title": "Template Builder",
+					"route": "/TemplateBuilderSummary",
+					"parentKey": "SETUP",
+					"sectionName": "Master Setup"
+				},
+				{
+					"key": "WORKFLOW",
+					"title": "Workflow",
+					"route": "/WorkFlowSummary",
+					"parentKey": "SETUP",
+					"sectionName": "Master Setup"
+				},
+				{
+					"key": "CRM",
+					"title": "CRM",
+					"route": null,
+					"parentKey": null,
+					"sectionName": null
+				},
+				{
+					"key": "BUSINESSPLAN",
+					"title": "Business Plan ",
+					"route": "/BusinessPlanSummary",
+					"parentKey": "CRM",
+					"sectionName": null
+				},
+				{
+					"key": "LEADS",
+					"title": "Leads",
+					"route": "/LeadSummary",
+					"parentKey": "CRM",
+					"sectionName": null
+				},
+				{
+					"key": "OPPORTUNITIES",
+					"title": "Opportunities",
+					"route": "/OpportunitySummary",
+					"parentKey": "CRM",
+					"sectionName": null
+				},
+				{
+					"key": "CONTACTS",
+					"title": "Contacts",
+					"route": "/ContactSummary",
+					"parentKey": "CRM",
+					"sectionName": null
+				},
+				{
+					"key": "DASHBOARD",
+					"title": "Dashboard",
+					"route": null,
+					"parentKey": null,
+					"sectionName": null
+				},
+				{
+					"key": "CORPORATEDASHBOARD",
+					"title": "Corporate Dashboard",
+					"route": "/CorporateDashboard",
+					"parentKey": "DASHBOARD",
+					"sectionName": null
+				},
+				{
+					"key": "SALESDASHBOARD",
+					"title": "Sales Dashboard",
+					"route": "/SalesDashboard",
+					"parentKey": "DASHBOARD",
+					"sectionName": null
+				},
+				{
+					"key": "CUSTOMERDASHBOARD",
+					"title": "Customer Dashboard",
+					"route": "/CustomerDashboard",
+					"parentKey": "DASHBOARD",
+					"sectionName": null
+				},
+				{
+					"key": "REPORTS",
+					"title": "Reports",
+					"route": null,
+					"parentKey": null,
+					"sectionName": null
+				},
+				{
+					"key": "WTG_WISE_ALLOCATION",
+					"title": "WTG Wise Allocation",
+					"route": "/WTGWiseAllocation",
+					"parentKey": "REPORTS",
+					"sectionName": "Allocation"
+				},
+				{
+					"key": "BULK_BILL_REPORT",
+					"title": "Bulk Bill Report Generation",
+					"route": "/BulkBillReportGeneration",
+					"parentKey": "REPORTS",
+					"sectionName": "Billing"
+				},
+				{
+					"key": "PARK_TOTAL_INVOICE",
+					"title": "Park Total Invoice",
+					"route": "/PARK_TOTAL_INVOICE",
+					"parentKey": "REPORTS",
+					"sectionName": "Billing"
+				},
+				{
+					"key": "SALES_TALLY_REPORT",
+					"title": "Sales Tally Integration Report",
+					"route": "/SalesTallyReport",
+					"parentKey": "REPORTS",
+					"sectionName": "Common"
+				},
+				{
+					"key": "PARK_TOTAL_INVOICE_SLOT_WISE",
+					"title": "Park Total Invoice - Slot Wise",
+					"route": "/PARK_TOTAL_SLOT_WISE_INVOICE",
+					"parentKey": "REPORTS",
+					"sectionName": "Billing"
+				}
+			]
+		}
+	}
+}

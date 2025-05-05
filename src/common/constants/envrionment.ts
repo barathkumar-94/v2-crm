@@ -1,0 +1,8 @@
+const CLIENT_ID = process.env.CLIENT_ID;
+const CLIENT_SECRET = process.env.CLIENT_SECRET;
+const USE_IMPLICIT_FLOW = process.env.USE_IMPLICIT_FLOW == 'true' ? true : false;
+const AUTHENTICATION_URL = process.env.AUTHENTICATION_URL;
+const QUERY_API_URL = process.env.QUERY_API_URL;
+const REPORT_API_URL = process.env.REPORT_API_URL;
+
+export {CLIENT_ID, CLIENT_SECRET, USE_IMPLICIT_FLOW, AUTHENTICATION_URL, QUERY_API_URL, REPORT_API_URL};
