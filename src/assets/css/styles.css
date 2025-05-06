@@ -1399,12 +1399,12 @@ input::placeholder {
   list-style-type: none !important;
   display: flex;
   align-items: baseline;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 .left_panel_body .file_preview {
-  padding: 0.5rem 0.75rem;
-  width: 100%;
+  padding: 0.25rem 0.5rem;
+  width: auto;
   border: 1px solid #f2f2f2;
   background-color: #E7EDFF !important;
   border-radius: 4px;
@@ -1413,17 +1413,14 @@ input::placeholder {
   position: relative;
 }
 .left_panel_body .file_preview h6 {
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: 600;
   font-family: var(--font-raleway);
-  margin: 0;
   color: #396AFF !important;
+  margin: 0;
+  line-height: 0;
 }
-.left_panel_body .file_preview button {
-  padding: 0;
-  border: 0;
-  background-color: transparent;
-  float: right;
+.left_panel_body .file_preview .file_checkbox {
   position: absolute;
   right: 1rem;
   font-size: 0.875rem;
@@ -1517,4 +1514,101 @@ input::placeholder {
   bottom: 6px;
   border: 0;
   background: transparent;
+}
+
+.file_placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  color: #1a3562 !important;
+  font-family: var(--font-nunito) !important;
+  border: 1px dashed #e5e5e5;
+  border-radius: 5px;
+  padding: 0.875rem;
+  cursor: pointer;
+}
+.file_placeholder svg {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.gpt_modal .modal-header {
+  padding: 0.5rem 1rem !important;
+}
+.gpt_modal .modal-header .modal-title {
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  color: #1a3562 !important;
+  font-family: var(--font-nunito) !important;
+}
+.gpt_modal .modal-footer {
+  padding: 0.25rem 1rem !important;
+}
+.gpt_modal .modal-footer .select_btn {
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  font-family: var(--font-nunito) !important;
+  background-color: var(--rf-primary-button-bg-color) !important;
+  border-color: var(--rf-primary-button-bg-color) !important;
+  box-shadow: none !important;
+}
+.gpt_modal .uploaded_file_list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.gpt_modal .uploaded_file_list .checkbox_card {
+  list-style: none;
+  margin-bottom: 0;
+}
+.gpt_modal .uploaded_file_list .checkbox_card input {
+  visibility: hidden;
+}
+
+.checkbox_card {
+  list-style: none;
+  margin-bottom: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 0;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+.checkbox_card input {
+  visibility: hidden;
+  position: absolute;
+}
+.checkbox_card input:checked + label {
+  background-color: #d1e7dd;
+  border-color: #0f5132;
+}
+.checkbox_card label {
+  display: block;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.checkbox_card label .file_name {
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  color: #1a3562 !important;
+  font-family: var(--font-nunito) !important;
 }

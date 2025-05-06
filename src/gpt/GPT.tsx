@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Modal, ModalHeader, ModalBody, ModalFooter, Button } from 'reactstrap';
 import { IRFEventParams, RetinaFormBuilder } from '@retina360-ai/core-ui-library-v2';
 import { IPageBaseProps } from '../common/objects';
 import { CRM_TRANSACTION } from '../common/constants';
@@ -19,6 +20,13 @@ const GPT: React.FC<IPageBaseProps> = (props) => {
         "Interactive Merge Suggestions"
     ]);
 
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedFiles, setSelectedFiles] = useState<string[]>([]); // State to store selected files
+
+    const toggleModal = () => {
+        setIsModalOpen(!isModalOpen);
+    };
+
     const handleSuggestionClick = (suggestion: string) => {
         console.log(`Suggestion clicked: ${suggestion}`);
         // Add your logic here, e.g., navigate or display more details
@@ -29,6 +37,23 @@ const GPT: React.FC<IPageBaseProps> = (props) => {
         moduleName: CRM_TRANSACTION,
         input: [''],
     };
+
+    const handleFilePlaceholderClick = () => {
+        console.log('File placeholder clicked');
+        toggleModal(); // Open the modal
+    };
+
+    const handleFileSelection = () => {
+        const checkboxes = document.querySelectorAll('.uploaded_file_list input[type="checkbox"]:checked');
+        const selected = Array.from(checkboxes).map((checkbox) => (checkbox as HTMLInputElement).id);
+        setSelectedFiles(selected); // Update selected files
+        toggleModal(); // Close the modal
+    };
+
+    const fileList = Array.from({ length: 12 }, (_, index) => ({
+        id: `file${index + 1}`,
+        name: `File_${index + 1}.pdf`,
+    }));
 
     return (
         <RetinaFormBuilder scrollKey={props.scrollKey} onLoadEventParams={onLoadEventParams}>
@@ -52,24 +77,27 @@ const GPT: React.FC<IPageBaseProps> = (props) => {
                             </div>
                             <div className="left_panel_list">
                                 <div className="left_panel_header">
-                                    <h3>Selected Files</h3>
+                                    <h3>Select Uploaded Files</h3>
                                 </div>
                                 <div className="left_panel_body pr-3">
                                     <ul className='file_preview_list'>
-                                        <li className='file_preview'>
-                                            <span className='mr-1'>
+                                        {selectedFiles.length > 0 ? (
+                                            selectedFiles.map((fileId) => {
+                                                const file = fileList.find((f) => f.id === fileId);
+                                                return (
+                                                    <li key={fileId} className='file_preview'>
+                                                        <span className='mr-2'><FileIcon /></span>
+                                                        <h6 className='m-0'>{file?.name}</h6>
+                                                    </li>
+                                                );
+                                            })
+                                        ) : (
+                                            <li className='file_placeholder' onClick={handleFilePlaceholderClick}>
                                                 <FileIcon />
-                                            </span>
-                                            <h6>analysis_file_1.docx</h6>
-                                            <button className='close_btn'>X</button>
-                                        </li>
-                                        <li className='file_preview'>
-                                            <span className='mr-1'>
-                                                <FileIcon />
-                                            </span>
-                                            <h6>analysis_file_2.docx</h6>
-                                            <button className='close_btn'>X</button>
-                                        </li>
+                                                <p className='m-0'>No files were selected</p>
+                                                <p className='m-0'>Please select the files from uploaded file</p>
+                                            </li>
+                                        )}
                                     </ul>
                                 </div>
                             </div>
@@ -79,7 +107,7 @@ const GPT: React.FC<IPageBaseProps> = (props) => {
                         <div className="chat_panel">
                             <div className="convo_section"></div>
                             <div className="input_panel">
-                                <input type="text" />
+                                <input type="text"  placeholder='Enter your queries'/>
                                 <button className='chat_button'>
                                     <SendIcon />
                                 </button>
@@ -107,6 +135,27 @@ const GPT: React.FC<IPageBaseProps> = (props) => {
                     </div>
                 </div>
             </div>
+
+            {/* Modal Component */}
+            <Modal isOpen={isModalOpen} toggle={toggleModal} centered className='gpt_modal'>
+                <ModalHeader toggle={toggleModal}>File Selection</ModalHeader>
+                <ModalBody>
+                    <ul className='uploaded_file_list'>
+                        {fileList.map((file) => (
+                            <li key={file.id} className="checkbox_card">
+                                <input type="checkbox" id={file.id} />
+                                <label className='p-2' htmlFor={file.id}>
+                                    <span><FileIcon /></span>
+                                    <span className='file_name'>{file.name}</span>
+                                </label>
+                            </li>
+                        ))}
+                    </ul>
+                </ModalBody>
+                <ModalFooter>
+                    <Button className='px-2 select_btn' onClick={handleFileSelection}>select files</Button>
+                </ModalFooter>
+            </Modal>
         </RetinaFormBuilder>
     );
 };
