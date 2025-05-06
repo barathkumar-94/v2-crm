@@ -9,8 +9,7 @@ import {
 } from '@retina360-ai/core-ui-library-v2';
 import * as React from 'react';
 import styled from 'styled-components';
-import { RFFooter } from '../../../crm/app/src/common/components/footer';
-import { RFCRMToolbar } from '../../../crm/app/src/common/components/toolbar';
+import { RFCRMToolbar } from '../common/components/toolbar';
 import { CRM_MASTER } from '../common/constants';
 
 
