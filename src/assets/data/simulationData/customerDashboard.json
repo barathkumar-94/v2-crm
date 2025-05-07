@@ -4,11 +4,11 @@
             "header": {
                 "totalGenerationUnits": 13,
                 "totalConsumptionUnits": 12,
-                "paymentSecurityValue": "459520",
-                "totalBillValue": "182777251080",
-                "lastBillValue": "182777251080",
+                "paymentSecurityValue": "459.52 K",
+                "totalBillValue": "182.78 B",
+                "lastBillValue": "182.78 B",
                 "totalPPA": 8,
-                "totalPPAValue": "17103371772"
+                "totalPPAValue": "17.10 B"
             },
             "monthlyDemand":[
                 { "month": "January", "demand": 4000 },

@@ -47,8 +47,8 @@
 				},
 				{
 					"key": "GPT",
-					"title": "GPT",
-					"route": "/gpt",
+					"title": "Contract Analysis",
+					"route": "/projectSummary",
 					"parentKey": null,
 					"sectionName": null
 				}

@@ -22,8 +22,8 @@
   --rf-primary-text-color: #ffffff;
   --rf-navbar-bg-color: #175bcc;
   --rf-navbar-text-color: #ffffff;
-  --rf-primary-button-bg-color: #175BCC;
-  --rf-primary-active-button-bg-color: #175BCC;
+  --rf-primary-button-bg-color: #6750A4;
+  --rf-primary-active-button-bg-color: #6750A4;
   --rf-primary-button-text-color: #ffffff;
   --rf-breadcrumb-link-color: #175BCC;
   --rf-widget-border-color: #ddd;
@@ -347,7 +347,7 @@ added for test
 .navbar-commandbar .ms-CommandBar {
   padding-left: 0px;
   height: 100%;
-  background-color: var(--rf-navbar-bg-color);
+  background-color: var(--rf-navbar-bg-color) !important;
   color: var(--rf-navbar-text-color);
 }
 .navbar-commandbar .ms-CommandBar .ms-CommandBarItem-link {
@@ -1611,4 +1611,92 @@ input::placeholder {
   font-weight: 600 !important;
   color: #1a3562 !important;
   font-family: var(--font-nunito) !important;
+}
+
+.project_summary_list_item {
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 0.5rem;
+  display: flex;
+}
+
+.detail_panel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.detail_panel .project_pic {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7edff !important;
+}
+.detail_panel .project_pic p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a3562 !important;
+  font-family: var(--font-nunito) !important;
+  margin: 0;
+}
+.detail_panel .content_panel .project_name {
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  color: #1a3562 !important;
+  font-family: var(--font-nunito) !important;
+  margin: 0;
+}
+.detail_panel .content_panel .project_id {
+  font-size: 0.5rem !important;
+  font-weight: 600 !important;
+  color: #1a3562 !important;
+  background-color: #E7EDFF;
+  padding: 0.15rem 0.75rem 0.15rem 0.25rem;
+  border-radius: 0 2px 2px 0;
+  border-left: 3px solid #1a3562;
+}
+
+.desc_panel label {
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  color: #1a3562 !important;
+  margin-bottom: 0.25rem !important;
+}
+.desc_panel p {
+  font-size: 0.75rem !important;
+  font-weight: 400 !important;
+  color: #1a3562 !important;
+  margin: 0;
+}
+
+.action_panel {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 100%;
+  position: relative;
+}
+.action_panel .btn_upload {
+  background-color: #6750A4 !important;
+  color: #fff !important;
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  padding: 0.25rem 1rem !important;
+  border-radius: 0.25rem !important;
+  box-shadow: none !important;
+  border: 1px solid #6750A4 !important;
+}
+
+.file_count {
+  font-size: 0.5rem !important;
+  font-weight: 600 !important;
+  color: #1a3562 !important;
+  font-family: var(--font-nunito) !important;
+  position: absolute;
+  bottom: 0;
+  right: 1.5rem;
+  margin: 0;
 }

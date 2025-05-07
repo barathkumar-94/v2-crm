@@ -45,6 +45,7 @@ import { CorporateDashboard } from '../../dashboard/corporate';
 import { FourwayAnalysis } from '../../master/FourwayAnalysisScreen/FourwayAnalysis';
 import ManageProject from '../../R360xGPT/manageproject';
 import GPT from '../../gpt/GPT';
+import ProjectSummary from '../../gpt/ProjectSummary';
 
 export const routes: Dictionary<ICRMRouteComponent> = {
   ...route3,
@@ -268,6 +269,11 @@ export const routes: Dictionary<ICRMRouteComponent> = {
   '/CorporateDashboard': {
     component: <CorporateDashboard />,
     title: 'Corporate Dashboard',
+    moduleName: 'DASHBOARD'
+  },
+  '/projectSummary': {
+    component: <ProjectSummary />,
+    title: 'Project Summary',
     moduleName: 'DASHBOARD'
   }
 };

@@ -200,13 +200,6 @@
 					"sectionName": null
 				},
 				{
-					"key": "SALESDASHBOARD",
-					"title": "Sales Dashboard",
-					"route": "/SalesDashboard",
-					"parentKey": "DASHBOARD",
-					"sectionName": null
-				},
-				{
 					"key": "CUSTOMERDASHBOARD",
 					"title": "Customer Dashboard",
 					"route": "/CustomerDashboard",

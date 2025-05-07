@@ -2,7 +2,7 @@
     .ms-CommandBar {
         padding-left: 0px;
         height: 100%;
-        background-color: var(--rf-navbar-bg-color);
+        background-color: var(--rf-navbar-bg-color) !important;
         color: var(--rf-navbar-text-color);
 
         .ms-CommandBarItem-link {

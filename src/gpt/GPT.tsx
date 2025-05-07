@@ -107,7 +107,7 @@ const GPT: React.FC<IPageBaseProps> = (props) => {
                         <div className="chat_panel">
                             <div className="convo_section"></div>
                             <div className="input_panel">
-                                <input type="text"  placeholder='Enter your queries'/>
+                                <input type="text" placeholder='Enter your queries' />
                                 <button className='chat_button'>
                                     <SendIcon />
                                 </button>

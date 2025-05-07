@@ -398,13 +398,6 @@
 			"sectionName":null
 		  },
 		  {
-			"key": "salesDashboard",
-			"title": "Sales Dashboard",
-			"route": "/SalesDashboard",
-			"parentKey": "DASHBOARD",
-			"sectionName":null
-		  },
-		  {
 			"key": "energyAccountingDashboard",
 			"title": "Energy Accounting Dashboard",
 			"route": "/EnergyAccountingDashboard",
